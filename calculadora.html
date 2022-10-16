@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <form class="calculadora" name="calc">
+            <input type="text" name="primeiro_valor" id="primeiroValor">
+            <input type="text" class="value" name="operacao" id="operacao" maxlength="1" readonly>
+            <input type="text" name="segundo_valor" id="segundoValor">
+            <label for="igual">=</label>
+            <input type="text" name="primeiro_valor" id="resultado" readonly>
+        </form>
+
+        <button id="btn_soma"><span class="num" onclick="document.calc.operacao.value += '+'">+</span></button>
+        <button id="btn_subtracao"><span class="num" onclick="document.calc.operacao.value += '-'">-</span></button>
+        <button id="btn_multiplicacao"><span class="num" onclick="document.calc.operacao.value += '*'">*</span></button>
+        <button id="btn_divisao"><span class="num" onclick="document.calc.operacao.value += '/'">/</span></button>
+
+    </main>
+</body>
+</html>
